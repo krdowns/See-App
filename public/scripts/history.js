@@ -2,7 +2,7 @@ window.onload = function renderChart(data, labels) {
     let toneObject = {};
     
     $.ajax({
-        url: './user/'+localStorage.userID+'/entries',
+        url: '/user/'+localStorage.userID+'/entries',
         dataType: 'json'
     }).done(function(data) {
         data.data.forEach(function(singleEntry) {
