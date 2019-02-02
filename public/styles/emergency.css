@@ -31,6 +31,7 @@
     .bottom-buttons-container a {
         text-decoration: none;
         color: inherit;
+        float: right;
     }
     
     .ice911 {
