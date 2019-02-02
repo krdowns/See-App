@@ -63,7 +63,7 @@ window.onload = function() {
         $('#signupForm').toggleClass('show');
         $('#noToken').toggleClass('show');
         checkForLogin();
-        window.location.href = "./index";
+        window.location.href = "./";
       }
 
     })
