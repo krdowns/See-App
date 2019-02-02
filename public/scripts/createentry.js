@@ -1,16 +1,16 @@
+ROOT_URL = "//peaceful-coast-36308.herokuapp.com"
+
 /// CREATE FORM ///
 $('#save_entry').on('click', function (e) {
     console.log('clicked')
     e.preventDefault();
     var elements = $('#newEntryForm')[0].elements
     var content = elements[0].value
-    // var content = elements[1].value
     var author = localStorage.userID
         $.ajax({
-            url: '/api/entries',
+            url: `${ROOT_URL}/api/entries`,
             method: 'POST',
             data: {
-                // title,
                 content,
                 author
             },
