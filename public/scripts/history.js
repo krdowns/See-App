@@ -1,12 +1,7 @@
 window.onload = function renderChart(data, labels) {
     let toneObject = {};
-
-    // localStorage.getItem('userID')
-    // localStorage.setItem('userId', user)
-    
     $.ajax({
         url: '/user/'+localStorage.userID+'/entries',
-        // url: `/user/${user}/entries`,
         dataType: 'json'
     }).done(function(data) {
         data.data.forEach(function(singleEntry) {

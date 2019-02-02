@@ -138,7 +138,7 @@ window.onload = function(e) {
         type: "POST", //GET, POST, PUT
         url: '/verify',  
         beforeSend: function (xhr) {   
-            xhr.setRequestHeader("Authorization", 'Bearer '+ localStorage.token);
+            xhr.setRequestHeader("Authorization", 'Bearer '+ jwt);
         }
         }).done(function (response) {
         user = { email: response.email, _id: response._id }
