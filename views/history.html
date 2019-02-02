@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="#">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>History</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/history.css" />
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <nav>
+        <ul class="left-nav">
+            <li><a href="./feed"> <span class="back-arrow"> < </span> Back</a></li>
+        </ul>
+        <ul class="right-nav">
+            <li>Entry History</li>
+        </ul>
+    </nav>
+    <div class="dropdown-container">
+        <div class="dropdown">
+            <button class="dropbtn">
+                <div class="button-contents">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 24h-2v-24h2v24zm18-16l-16-6v12l16-6z"/></svg> 
+                    <p>January</p>
+                    <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" fill="#d8d8d8" class="dropdown-arrow" clip-rule="evenodd"><path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/></svg>
+                </div>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">January</a>
+                <a href="#">February</a>
+                <a href="#">March</a>
+                <a href="#">April</a>
+                <a href="#">May</a>
+                <a href="#">June</a>
+                <a href="#">July</a>
+                <a href="#">August</a>
+                <a href="#">September</a>
+                <a href="#">October</a>
+                <a href="#">November</a>
+                <a href="#">December</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="chart-row">
+            <canvas id="myChart"></canvas>
+        </div>
+        <p class="chart-title">Emotions</p>
+    </div>
+    
+    <div id="recent-entry-container" class="recent-entry-container">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+    <script src="scripts/moment.js"></script>
+    <script src="scripts/history.js"></script>
+    
+</body>
+</html>

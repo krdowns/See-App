@@ -1,0 +1,78 @@
+@media screen and (max-width: 425px) {    
+    body {
+        background-image: linear-gradient(-222deg, #3F3F59 0%, #1F2334 90%);
+        size: cover;
+        height: 812px;
+        width: 375.2px;
+        margin-left: 0%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        font-family: 'IBM Plex Sans', sans-serif;
+        box-sizing: border-box;
+    }
+
+    .logo-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        margin-top: 14.8%;
+        margin-bottom: 6.5%;
+    }
+
+    input {
+        width: 311px;
+        opacity: 0.75;
+        background: rgba(255,255,255,0.15);
+        font-weight: 500;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        height: 56px;
+        /* padding-left: 4.3%; */
+        margin-top: 20px;
+    }
+
+    input:focus {
+        background-color: rgba(255, 255, 255, 0.3);
+        color: rgba(255, 255, 255, 1);
+        border: 1px solid white;
+    }
+
+    #signup-button {
+        margin-top: 20px;
+        width: 326px;
+        background-color: transparent;
+        border: 2px solid rgba(255,255,255, 0.1); 
+        color: rgba(255, 255, 255, 0.1);
+        font-size: 20px;
+        text-align: center;
+        font-family: 'IBM Plex Sans', sans-serif;
+        opacity: 0.75;
+        margin-left: 6.5%;
+    }
+
+    #signup-button:active {
+        background-color: #FFFFFF;
+        color: #1F2334;;
+    }
+
+    #signupEmail, #signupPassword, #emergencyContact1, #emergencyContact2, #emergencyContact3 {
+        padding-left: 15px;
+        font-weight: 600;
+        font-family: 'IBM Plex Sans', sans-serif;
+        margin-left: 6.5%;
+    }
+
+    #signupForm {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+}

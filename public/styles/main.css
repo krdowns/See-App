@@ -1,0 +1,113 @@
+@media screen and (max-width: 425px) {    
+    body {
+        background-image: linear-gradient(-222deg, #3F3F59 0%, #1F2334 90%);
+        size: cover;
+        height: 812px;
+        width: 375.2px;
+        margin-left: 0%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+
+    #access {
+        display: flex;
+        flex-direction: row;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.4);
+        font-weight: 600;
+    }
+
+    .logo-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        margin-top: 14.8%;
+        margin-bottom: 6.5%;
+    }
+
+    input {
+        width: 311px;
+        opacity: 0.75;
+        background: rgba(255,255,255,0.15);
+        font-weight: 500;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        height: 56px;
+        padding-left: 4.3%;
+        margin-top: 20px;
+    }
+
+    input:focus {
+        background-color: rgba(255, 255, 255, 0.3);
+        color: rgba(255, 255, 255, 1);
+        border: 1px solid white;
+    }
+
+    .login-button {
+        margin-top: 20px;
+        background-color: transparent;
+        border: 2px solid rgba(255,255,255, 0.1); 
+        color: rgba(255, 255, 255, 0.1);
+        font-size: 20px;
+        text-align: center;
+        font-family: 'IBM Plex Sans', sans-serif;
+        opacity: 0.75;
+    }
+
+    .login-button:active {
+        background-color: #FFFFFF;
+        color: #1F2334;;
+    }
+
+    #loginEmail, #loginPassword, #signupEmail, #signupPassword, #emergencyContacts {
+        padding-left: 15px;
+        font-weight: 600;
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+
+    #loginForm {
+        width: 100%;
+    }
+
+    #loginForm div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #signupForm {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .login-subheader {
+        width: 100%;
+        margin-left: -2%;
+        text-align: center;
+    }
+
+    .forgot {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.3);
+    }
+        
+    .no-account {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+    .show-on-click {
+        display: none;
+    }
+  
+
+}

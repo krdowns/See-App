@@ -1,0 +1,108 @@
+@media screen and (max-width: 425px) {
+    html {
+        height: 100vh;
+    }
+
+    body {
+        background-image: linear-gradient(45deg, #1F2334, #3F3F59);
+        size: cover;
+        height: 100%;
+        background-repeat: no-repeat;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        background-color: transparent;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        color: #eee;
+        font-size: 18px;
+        font-weight: 200;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding-inline-start: 0px;
+        height: 40px;
+    }
+
+    a {
+        text-decoration: none;
+        color:inherit;
+    }
+
+    .done {
+        font-weight: 700;
+        color: #999;
+        font-size: 20px;
+    }
+
+    .titleInput {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #888;
+        width: 98.5%;
+        margin-bottom: 10px;
+        height: 30px;
+        color: #999;
+    }
+
+    .entryInput {
+        margin-top: 10px;
+        left: 0;
+        height: 300px;
+        width: 93.5%;
+        background-color: transparent;
+        border: 1px solid #888;
+        padding: 10px;
+        color: white;
+        font-size: 18px;
+        font-weight: 200;
+    }
+
+    .entryInput:focus, .titleInput:focus {
+        outline-color: lightblue;
+    }
+
+    label {
+        padding-top: 20px;
+        color: #999;
+    }
+
+    .btn {
+        margin-top: 10px;
+        padding: 10px;
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid #888;
+        color: #ddd;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .btn:hover {
+        border-color: lightblue;
+    }
+
+    .trigger-button {
+        display: flex;
+        flex-direction: row;
+        color: white;
+    }
+
+    .trigger-button input {
+        margin-top: 22.5px;
+        margin-right: 5px;
+    }
+}
