@@ -9,8 +9,8 @@ $('#save_entry').on('click', function (e) {
             url: '/api/entries',
             method: 'POST',
             data: {
-                content,
-                author
+                content:content,
+                author:author
             },
             success: function (res) {
                 window.location.href = "./history";
