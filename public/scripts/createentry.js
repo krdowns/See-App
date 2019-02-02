@@ -6,7 +6,7 @@ $('#save_entry').on('click', function (e) {
     var content = elements[1].value
     var author = localStorage.userID
         $.ajax({
-            url: '/api/entries',
+            url: './api/entries',
             method: 'POST',
             data: {
                 title,
