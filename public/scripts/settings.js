@@ -1,7 +1,7 @@
     $('#save-contacts').on('click', function (e) {
     e.preventDefault();
     var elements = $('#newContactForm')[0].elements[0]
-    var email = elements.value
+    var email = elements.value.tolowercase()
     var user = localStorage.userID
     
         $.ajax({
