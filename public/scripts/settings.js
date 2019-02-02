@@ -4,8 +4,9 @@
     e.preventDefault();
     var elements = $('#newContactForm')[0].elements[0]
     var email = elements.value
+    localStorage.getItem('userID')
+    localStorage.setItem('userId', [user])
     // var user = localStorage.userID
-    var user = user._id
     
         $.ajax({
         url: '/api/contacts',
