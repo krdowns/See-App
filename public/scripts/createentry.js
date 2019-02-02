@@ -17,7 +17,7 @@ $('#save_entry').on('click', function (e) {
             },
             success: function (res) {
                 // window.location.href = "./history";
-                console.log(data);
+                console.log(data.data);
             },
 
             error: function (err) {
