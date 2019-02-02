@@ -48,7 +48,7 @@ window.onload = function() {
 
   function submitSignup(e){
     e.preventDefault();
-    let userData = $(this).serialize()
+    let userData = $(this).serialize().tolowercase()
     $.ajax({
       method: "POST",
       url: "/user/signup",
