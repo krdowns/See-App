@@ -8,7 +8,7 @@ $('#save_entry').on('click', function (e) {
     localStorage.setItem('userId', author)
     // var author = localStorage.userID
         $.ajax({
-            url: './api/entries',
+            url: '/api/entries',
             method: 'POST',
             data: {
                 title,
@@ -16,7 +16,7 @@ $('#save_entry').on('click', function (e) {
                 author
             },
             success: function (res) {
-                window.location.href = "./history";
+                window.location.href = "/history";
             },
 
             error: function (err) {

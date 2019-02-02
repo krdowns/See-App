@@ -9,7 +9,7 @@
     // var user = localStorage.userID
     
         $.ajax({
-        url: './api/contacts',
+        url: '/api/contacts',
         method: 'POST',
         data: {
             email,
@@ -31,7 +31,7 @@
 window.onload = function(e) {
     $.ajax({
         method: 'GET',
-        url: `./user/${user}/contacts`,
+        url: `/user/${user}/contacts`,
         // url: '/user/'+localStorage.userID+'/contacts',
         success: handleSuccess,
         error: handleError

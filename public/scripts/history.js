@@ -6,7 +6,7 @@ window.onload = function renderChart(data, labels) {
     
     $.ajax({
         // url: '/user/'+localStorage.userID+'/entries',
-        url: `./user/${user}/entries`,
+        url: `/user/${user}/entries`,
         dataType: 'json'
     }).done(function(data) {
         data.data.forEach(function(singleEntry) {
@@ -66,7 +66,7 @@ window.onload = function renderChart(data, labels) {
     $.ajax({
         method: 'GET',
         // url: './user/'+localStorage.userID+'/entries',
-        url: `./user/${user}/entries`,
+        url: `/user/${user}/entries`,
         success: handleSuccess,
         error: handleError
     });
@@ -110,7 +110,7 @@ window.onload = function renderChart(data, labels) {
 
         entryId = $('#deleteEntry').data().id
         console.log(entryId)
-        var entriesUrl = `./api/entries/${entryId}`
+        var entriesUrl = `/api/entries/${entryId}`
         console.log(entriesUrl)
 
         $.ajax({
