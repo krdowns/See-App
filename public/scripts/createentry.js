@@ -19,7 +19,7 @@ $('#save_entry').on('click', function (e) {
 
             error: function (err) {
                 console.log(err);
-                alert(`didn't work`);
+                alert(`Sorry, your post didn't go through`);
             }
         });
 });

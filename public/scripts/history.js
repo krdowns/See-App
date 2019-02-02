@@ -2,7 +2,7 @@ window.onload = function renderChart(data, labels) {
     let toneObject = {};
     
     $.ajax({
-        url: '/user/'+localStorage.userID+'/entries',
+        url: './user/'+localStorage.userID+'/entries',
         dataType: 'json'
     }).done(function(data) {
         data.data.forEach(function(singleEntry) {
@@ -61,7 +61,7 @@ window.onload = function renderChart(data, labels) {
 //   GET ALL ENTRIES
     $.ajax({
         method: 'GET',
-        url: '/user/'+localStorage.userID+'/entries',
+        url: './user/'+localStorage.userID+'/entries',
         success: handleSuccess,
         error: handleError
     });
@@ -95,6 +95,7 @@ window.onload = function renderChart(data, labels) {
     function handleError(e) {
         console.log('error', e);
         $('.recent-entry-date').text('Failed to load.');
+        alert(`Can't retrieve`)
     }
 
     // DELETE ENTRIES //
@@ -104,7 +105,7 @@ window.onload = function renderChart(data, labels) {
 
         entryId = $('#deleteEntry').data().id
         console.log(entryId)
-        var entriesUrl = `/api/entries/${entryId}`
+        var entriesUrl = `./api/entries/${entryId}`
         console.log(entriesUrl)
 
         $.ajax({
