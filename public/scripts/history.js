@@ -1,12 +1,12 @@
 window.onload = function renderChart(data, labels) {
     let toneObject = {};
 
-    localStorage.getItem('userID')
-    localStorage.setItem('userId', user)
+    // localStorage.getItem('userID')
+    // localStorage.setItem('userId', user)
     
     $.ajax({
-        // url: '/user/'+localStorage.userID+'/entries',
-        url: `/user/${user}/entries`,
+        url: '/user/'+localStorage.userID+'/entries',
+        // url: `/user/${user}/entries`,
         dataType: 'json'
     }).done(function(data) {
         data.data.forEach(function(singleEntry) {
@@ -65,8 +65,8 @@ window.onload = function renderChart(data, labels) {
 //   GET ALL ENTRIES
     $.ajax({
         method: 'GET',
-        // url: './user/'+localStorage.userID+'/entries',
-        url: `/user/${user}/entries`,
+        url: './user/'+localStorage.userID+'/entries',
+        // url: `/user/${user}/entries`,
         success: handleSuccess,
         error: handleError
     });

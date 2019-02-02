@@ -4,9 +4,9 @@
     e.preventDefault();
     var elements = $('#newContactForm')[0].elements[0]
     var email = elements.value
-    localStorage.getItem('userID')
-    localStorage.setItem('userId', user)
-    // var user = localStorage.userID
+    // localStorage.getItem('userID')
+    // localStorage.setItem('userId', user)
+    var user = localStorage.userID
     
         $.ajax({
         url: '/api/contacts',
@@ -31,8 +31,8 @@
 window.onload = function(e) {
     $.ajax({
         method: 'GET',
-        url: `/user/${user}/contacts`,
-        // url: '/user/'+localStorage.userID+'/contacts',
+        // url: `/user/${user}/contacts`,
+        url: '/user/'+localStorage.userID+'/contacts',
         success: handleSuccess,
         error: handleError
     });
