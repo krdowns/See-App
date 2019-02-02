@@ -48,7 +48,7 @@ window.onload = function() {
 
   function submitSignup(e){
     e.preventDefault();
-    let userData = $(this).serialize().tolowercase()
+    let userData = $(this).serialize()
     $.ajax({
       method: "POST",
       url: "/user/signup",
@@ -63,7 +63,7 @@ window.onload = function() {
         $('#signupForm').toggleClass('show');
         $('#noToken').toggleClass('show');
         checkForLogin();
-        // window.location.href = "./";
+        window.location.href = "./";
       }
 
     })
@@ -71,7 +71,7 @@ window.onload = function() {
 
   function submitLogin(e){
     e.preventDefault();
-    let userData = $(this).serialize().tolowercase()
+    let userData = $(this).serialize()
     $.ajax({
       method: "POST",
       url: "/user/login",
