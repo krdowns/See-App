@@ -5,11 +5,11 @@
     var elements = $('#newContactForm')[0].elements[0]
     var email = elements.value
     localStorage.getItem('userID')
-    localStorage.setItem('userId', [user])
+    localStorage.setItem('userId', user)
     // var user = localStorage.userID
     
         $.ajax({
-        url: '/api/contacts',
+        url: './api/contacts',
         method: 'POST',
         data: {
             email,
@@ -31,7 +31,8 @@
 window.onload = function(e) {
     $.ajax({
         method: 'GET',
-        url: '/user/'+localStorage.userID+'/contacts',
+        url: `./user/${user}/contacts`,
+        // url: '/user/'+localStorage.userID+'/contacts',
         success: handleSuccess,
         error: handleError
     });
@@ -96,7 +97,7 @@ window.onload = function(e) {
             console.log(id);
             $.ajax({
                 method: 'DELETE',
-                url: `/api/contacts/${id}`,
+                url: `./api/contacts/${id}`,
                 success: deleteSuccess,
                 error: handleError
             })
