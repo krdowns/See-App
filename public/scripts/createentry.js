@@ -16,7 +16,7 @@ $('#save_entry').on('click', function (e) {
                 author
             },
             success: function (res) {
-                window.location.href = "/history";
+                window.location.href = "./history";
             },
 
             error: function (err) {
