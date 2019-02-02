@@ -1,11 +1,7 @@
-    
-    
     $('#save-contacts').on('click', function (e) {
     e.preventDefault();
     var elements = $('#newContactForm')[0].elements[0]
     var email = elements.value
-    // localStorage.getItem('userID')
-    // localStorage.setItem('userId', user)
     var user = localStorage.userID
     
         $.ajax({
@@ -31,7 +27,6 @@
 window.onload = function(e) {
     $.ajax({
         method: 'GET',
-        // url: `/user/${user}/contacts`,
         url: '/user/'+localStorage.userID+'/contacts',
         success: handleSuccess,
         error: handleError
@@ -116,5 +111,46 @@ window.onload = function(e) {
         $('.current-contacts-container').text('No Contacts Available.');
     }; 
 
+    localStorage.length > 0 ? console.log(localStorage) : console.log('no local storage');
+
+    let loggedIn ;
+    let user ;
+  
+    checkForLogin();
+
+    $('#logout').on('click', handleLogout);
+    function handleLogout(e) {
+        e.preventDefault();
+        console.log("LOGGED OUT")
+        delete localStorage.token;
+        delete localStorage.userID;
+        $('#yesToken').toggleClass('show');
+        $('#message').text('Goodbye!')
+        user = null;
+        checkForLogin();
+        window.location.href = "./";
+    }
+
+    function checkForLogin(){
+    if(localStorage.token){
+        let jwt = localStorage.token
+        $.ajax({
+        type: "POST", //GET, POST, PUT
+        url: '/verify',  
+        beforeSend: function (xhr) {   
+            xhr.setRequestHeader("Authorization", 'Bearer '+ localStorage.token);
+        }
+        }).done(function (response) {
+        user = { email: response.email, _id: response._id }
+        localStorage.userID = user._id;
+        }).fail(function (err) {
+            console.log(err);
+            window.location.href = "./index";
+        });
+        $('#yesToken').toggleClass('show');
+    } else {
+        $('#noToken').toggleClass('show');
+    }
+    }
 
 }

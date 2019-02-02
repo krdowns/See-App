@@ -14,11 +14,12 @@
 <body>
     <nav>
         <ul class="left-nav">
-            <li>See</li>
+            <li><a class="sign-up" href="./">See</a></li>
+            <li><a class="feed" href="./feed">Feed</a></li>
         </ul>
         <ul class="right-nav">
-            <li>Profile</li>
-            <li>Sign Out</li>
+            <li><a class="history" href="./history">History</a></li>
+            <li><a class="logout" id="logout">Logout</a></li>
         </ul>
     </nav>
     <div class="profile-header">
@@ -27,7 +28,7 @@
         </div>
     </div>
 
-    <h1>Create Contacts</h1>
+    <h1>Add Contacts</h1>
     <form id="newContactForm">
         <div class="contact-container">
             <input type="email" id="emailContactEmail" name="email" placeholder="Contact Email Address" required="required"/>
