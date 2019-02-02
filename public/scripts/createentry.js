@@ -1,12 +1,13 @@
 /// CREATE FORM ///
 $('#save_entry').on('click', function (e) {
+    console.log('clicked')
     e.preventDefault();
     var elements = $('#newEntryForm')[0].elements
     var title = elements[0].value
     var content = elements[1].value
     var author = localStorage.userID
         $.ajax({
-            url: './api/entries',
+            url: '/api/entries',
             method: 'POST',
             data: {
                 title,
