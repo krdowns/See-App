@@ -4,11 +4,9 @@ $('#save_entry').on('click', function (e) {
     var elements = $('#newEntryForm')[0].elements
     var title = elements[0].value
     var content = elements[1].value
-    // localStorage.getItem('userID')
-    // localStorage.setItem('userId', author)
     var author = localStorage.userID
         $.ajax({
-            url: '/api/entries',
+            url: './api/entries',
             method: 'POST',
             data: {
                 title,
@@ -17,7 +15,7 @@ $('#save_entry').on('click', function (e) {
             },
             success: function (res) {
                 window.location.href = "./history";
-                console.log(res.data)
+                console.log("Post worked")
             },
 
             error: function (err) {
