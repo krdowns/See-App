@@ -25,6 +25,7 @@
 
     .bottom-buttons-container svg {
         fill: white;
+        margin-left: 10px;
     }
 
     .bottom-buttons-container a {
