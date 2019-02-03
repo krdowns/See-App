@@ -36,10 +36,10 @@ a {
     display: flex;
     flex-direction: row;
     list-style: none;
-    color: #777;
+    color: #888;
     font-weight: 300;
     font-size: 20px; 
-    margin-top: -7.5px;   
+    margin-top: -6.5px;   
 }
 
 .back-arrow {
@@ -55,6 +55,7 @@ a {
 
 .right-nav {
     width: 60%;
+    margin-left: 3%;
 }
 
 .right-nav li {
@@ -66,7 +67,7 @@ a {
     text-align: center;
     margin-left: -45px;
     margin-top: -6px;
-    color: #555;
+    color: #777;
 }
 
 .signup {
@@ -79,7 +80,7 @@ a {
 
 .left-nav a {
     text-decoration: none;
-    color: black;
+    color: #888;
 }
 
 .right-nav {
@@ -93,7 +94,7 @@ a {
 
 .right-nav a {
     text-decoration: none;
-    color: black;
+    color: #888;
     text-align: center;
 }
 
@@ -104,7 +105,7 @@ a {
     margin-top: 50px;
     width: 105%;
     margin-left: -2.5%;
-    background-color: #1F2334;
+    background-image: linear-gradient(-222deg, #3F3F59 0%, #1F2334 90%);
     color: white;
     justify-content: center;
 }
@@ -161,7 +162,7 @@ h2 {
 
 .left-svg {
     margin-right: 2%;
-    margin-top: 15px;
+    margin-top: 10px;
     fill: #838384;
 }
 
@@ -187,7 +188,7 @@ h2 {
 
 .arrow-svg {
     fill: #a2a2a2;
-    padding-top: 10px;
+    padding-top: 12.5px;
     margin-right: 20px;
 }
 

@@ -37,10 +37,9 @@
         display: flex;
         flex-direction: row;
         list-style: none;
-        color: #777;
         font-weight: 300;
         font-size: 20px; 
-        margin-top: -7.5px;   
+        margin-top: -5px;   
     }
 
     .back-arrow {
@@ -51,7 +50,7 @@
     }
 
     .left-nav {
-        margin-left: -5%;
+        margin-left: -6.5%;
     }
 
     .right-nav {
@@ -65,47 +64,13 @@
         font-weight: 500;
         width: 100%;
         text-align: center;
-        margin-left: -45px;
+        margin-left: -20px;
         margin-top: -6px;
-        color: #555;
-    }
-    /* nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: lightblue;
-        font-family: 'IBM Plex Sans', sans-serif;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        list-style: none;
-        text-decoration: none;
-    }
-
-    .left-nav {
-        width: 50%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-left: 0%;
-        color: black;
-        padding-left: 0;
-    } */
-
-    .signup {
-        margin-right: -5px;
-    }
-
-    .feed {
-        margin-right: -5px;
     }
 
     .left-nav a {
         text-decoration: none;
-        color: black;
+        color: #888;
     }
 
     .right-nav {
@@ -117,10 +82,8 @@
         margin-right: 2%;
     }
 
-    .right-nav a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
+    .right-nav h1 {
+        color: #777;
     }
 
     .favorites-header {
@@ -130,7 +93,7 @@
         margin-top: 50px;
         width: 104.5%;
         margin-left: -2.5%;
-        background-color: #1F2334;
+        background-image: linear-gradient(-222deg, #3F3F59 0%, #1F2334 90%);
     }
 
     .favorites {
@@ -148,6 +111,7 @@
         flex-wrap: wrap;
         justify-content: space-around;
         justify-content: left;
+        padding-right: 5%;
     }
 
     .favorites-container img {
@@ -248,6 +212,7 @@
 
     ::placeholder {
         color: #d8d8d8;
+        font-size: 16px;
     }
 
     input[type="submit"] {
