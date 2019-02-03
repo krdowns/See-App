@@ -89,7 +89,7 @@
     .favorites-header {
         display: flex;
         flex-direction: column;
-        height: 231px;
+        height: 264px;
         margin-top: 50px;
         width: 104.5%;
         margin-left: -2.5%;
@@ -112,6 +112,7 @@
         justify-content: space-around;
         justify-content: left;
         padding-right: 5%;
+        margin-top: 4%;
     }
 
     .favorites-container img {
@@ -212,12 +213,14 @@
 
     ::placeholder {
         color: #d8d8d8;
+        padding-bottom: 5px;
         font-size: 16px;
     }
 
     input[type="submit"] {
         width: 20%;
-        height:25px;
+        font-size: 16px;
+        height: 25px;
         text-align: center;
         border: 1px solid #1F2334;
         border-radius: 0px;

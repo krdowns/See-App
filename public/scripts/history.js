@@ -28,7 +28,7 @@ window.onload = function renderChart(data, labels) {
             options: {
                responsive: true,
                legend: {
-                  position: "right",
+                  position: "right", 
                   labels: {
                      fontSize: 12,
                      usePointStyle: true

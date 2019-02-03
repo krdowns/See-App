@@ -166,23 +166,13 @@
         width: 98%;
     }
 
-    .chart-row p {
-        opacity: 0.65;
-        transform: rotate(-90deg);
-        font-size: 9px;
-        color: #1F2334;
-        letter-spacing: 0;
-        text-align: center;
-        white-space: nowrap;
-        overflow: hidden;
-    }
 
     .container p {
         width: 100%;
         opacity: 0.65;
         text-align: center;
         color: #1F2334;
-        margin-top: 5%;
+        margin-top: 1%;
     }
     
     /* RECENT POSTS */
