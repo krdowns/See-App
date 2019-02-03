@@ -32,7 +32,7 @@
     }
 
     .section-divider {
-        border: 3px solid #F3F3F3;
+        border: 10px solid #F3F3F3;
         margin-top: 5px;
         height: 0.7%;
     }
@@ -94,9 +94,8 @@
     }
 
     .share-container img {
-        padding-top: 30px;
-        margin-bottom: 20px;
-        
+        height: 60px;
+        width: 60px;
     }
 
     .share-container h1 {
@@ -263,6 +262,10 @@
         font-weight: 500;
     }
 
+    .panel-header {
+        font-weight: 600;
+    }
+
     .volunteer-container article {
         text-align: left;
         color: #838384;
@@ -290,8 +293,9 @@
         background-color: transparent;
         cursor: pointer;
         padding: 18px;
-        margin-top: -70px;
+        margin-top: -90px;
         margin-left: 290px;
+        margin-bottom: -15px;
         width: 20%;
         border: none;
         outline: none;
@@ -347,7 +351,7 @@
     .humane-link {
         padding-top: 10px;
         font-size: 18px;
-        font-weight: 100;
+        font-weight: 600;
         padding-bottom: 20px;
     }
 
