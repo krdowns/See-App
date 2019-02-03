@@ -41,12 +41,15 @@
         text-align: center;
         padding-inline-start: 0px;
         height: 40px;
-        width: 100%;
     }
 
     a {
         text-decoration: none;
         color:inherit;
+    }
+
+    .cancel {
+        margin-left: 0;
     }
 
     .done {
