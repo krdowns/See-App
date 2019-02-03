@@ -41,6 +41,7 @@
         text-align: center;
         padding-inline-start: 0px;
         height: 40px;
+        width: 100%;
     }
 
     a {
@@ -81,15 +82,13 @@
         outline-color: lightblue;
     }
 
-    label {
-        padding-top: 20px;
-        color: #999;
-    }
-
     .btn {
+        position: fixed;
         margin-top: 10px;
         padding: 10px;
-        width: 100%;
+        width: 30%;
+        right: 0;
+        margin-right: 4.5%;
         background-color: transparent;
         border: 1px solid #888;
         color: #ddd;
