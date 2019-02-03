@@ -231,6 +231,7 @@
     form input[type="email"] {
         border: none;
         border-bottom: 1px solid #1F2334;
+        border-radius: 0px;
         height: 25px;
         margin-left: 6%;
         padding-left: 4%;
@@ -248,6 +249,7 @@
         height:25px;
         text-align: center;
         border: 1px solid #1F2334;
+        border-radius: 0px;
         margin-top: 2.5%;
         margin-left: 73.5%;
     }
