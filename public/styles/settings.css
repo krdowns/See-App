@@ -1,5 +1,65 @@
 @media screen and (max-width: 425px) {
     nav {
+        top: 0;
+        left: 0;
+        height: 50px;
+        position: fixed;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .navbar-header {
+        font-weight: 300;
+        font-size: 20px;
+        margin-top: 1.5px;
+        border: none;
+    }
+
+    .left-nav li {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        color: #777;
+        font-weight: 300;
+        font-size: 20px; 
+        margin-top: -7.5px;   
+    }
+
+    .back-arrow {
+        font-weight: 600;
+        font-size: 22px;
+        margin-top: -2.5px;
+        margin-right: -5px;
+    }
+
+    .left-nav {
+        margin-left: -5%;
+    }
+
+    .right-nav {
+        width: 60%;
+    }
+
+    .right-nav li {
+        text-decoration: none;
+        list-style: none;
+        font-size: 20px;
+        font-weight: 500;
+        width: 100%;
+        text-align: center;
+        margin-left: -45px;
+        margin-top: -6px;
+        color: #555;
+    }
+    /* nav {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -23,7 +83,7 @@
         margin-left: 0%;
         color: black;
         padding-left: 0;
-    }
+    } */
 
     .signup {
         margin-right: -5px;
@@ -53,31 +113,51 @@
         text-align: center;
     }
 
-    .profile-header {
+    .favorites-header {
+        display: flex;
+        flex-direction: column;
+        height: 231px;
+        margin-top: 50px;
+        width: 104.5%;
+        margin-left: -2.5%;
+        background-color: #1F2334;
+    }
+
+    .favorites {
+        color: white;
+        font-weight: 300;
+        font-size: 18px;
+        margin-left: 7.5%;
+        margin-top: 7%;
+        margin-bottom: -1%;
+    }
+
+    .favorites-container {
         display: flex;
         flex-direction: row;
-        height: 50px;
-        border: 2px solid gray;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        justify-content: left;
     }
 
-    .profile-pic {
-        width: 40px;
-        height: 40px;
-    }
+    .favorites-container img {
+        width: 60px;
+        height: 60px;
+        margin-left: 7.5%;
+        margin-top: 4%;
 
-    .profile-container {
-        font-size: 12px;
     }
 
     .current-contacts-container {
-        width: 100%;
+        width: 103.5%;
+        margin-left: -2%;
         display: flex;
         flex-direction: column;
     }
 
     .contact-container {
         font-size: 12px;
-        width: 98.75%;
+        width: 100%;
         display: flex;
     }
 
@@ -94,55 +174,100 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border-bottom: 1px solid #888;
+        border-bottom: 1px solid #d8d8d8;
+        padding-left: 6%;
+        padding-bottom: 3%;
+        margin-top: -2%;
+        font-size: 16px;
+        font-weight: 200;
+        color: #888;
     }
 
     .delete-contact-button {
-        background-color: transparent;
+        background-color: white;
         color: #111111;
-        border: 1px solid #1f1f1f;
-        border-radius: 5px;
+        border: none;
         margin-bottom: 5px;
         margin-top: -5px;
+        margin-left: -2%;
+        padding-right: 10%;
+        margin-right: 0;
+        fill: #a2a2a2;
     }
 
     .update-contact-button {
-        background-color: transparent;
-        color:#111111;
-        border: 1px solid #1f1f1f;
-        border-radius: 5px;
+        background-color: white;
+        border: none;
         margin-bottom: 5px;
+        margin-left: -40%;
         margin-top: -5px;
+        fill: #a2a2a2;
     }
 
-    h1 {
-        font-size: 16px;
-        width: 98.75%;
-        color: #888;
-        margin-bottom: 0px;
-        border-bottom: 1px solid #888;
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+    }
+
+    .add-contact-header {
+        font-size: 14px;
+        margin-top: 6%;
+        margin-left: 6%;
+        font-weight: 600;
+        color: #777;
     }
 
     form {
         display: flex;
         flex-direction: column;
-        width: 101%;
-        justify-content: space-around;
-        justify-content: left;
+        width: 100%;
     }
 
-    form input {
-        border: 1px solid #1f1f1f;
+    form input[type="email"] {
+        border: none;
+        border-bottom: 1px solid #1F2334;
         height: 25px;
-        padding-left: 5px;
-        width: 105%;
+        margin-left: 6%;
+        padding-left: 4%;
+        padding-bottom: 2%;
+        width: 83.5%;
         margin-top: 2.5%;
+    }
+
+    ::placeholder {
+        color: #d8d8d8;
     }
 
     input[type="submit"] {
-        width:98%;
+        width: 20%;
+        height:25px;
+        text-align: center;
+        border: 1px solid #1F2334;
         margin-top: 2.5%;
-        background-color: transparent;
-        padding-left: 0;
+        margin-left: 73.5%;
+    }
+
+    .inactive {
+        background-color: white;
+        border: 1.5px solid #1F2334;
+    }
+
+    .active {
+        background-color: #1F2334;
+        color: white;
+    }
+
+    .contacts-list {
+        color: #888;
+        font-size: 18px;
+        margin-left: -2%;
+        padding-left: 6%;
+        padding-bottom: 4%;
+        margin-top: 20px;
+        font-weight: 500;
+        width: 97%;
+        border-bottom: 1px solid #d8d8d8;
+
     }
 }

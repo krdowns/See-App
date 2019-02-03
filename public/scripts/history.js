@@ -85,7 +85,6 @@ window.onload = function renderChart(data, labels) {
                         <p id="entry-target">
                         "${singleEntry.content}"
                         </p>
-
                     </div>
                 </div>
                 `)

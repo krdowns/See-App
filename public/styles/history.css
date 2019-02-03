@@ -157,7 +157,6 @@
         justify-content: center;
         flex-direction: column;
         background-color: #FFFFFF;
-
     }
 
     .chart-row {
@@ -197,6 +196,36 @@
         justify-content: space-between;
         margin-top: 14.6px;
         background-color: #d8d8d8;
+    }
+
+    .accordion {
+        fill: black;
+        background-color: transparent;
+        cursor: pointer;
+        /* padding: 18px; */
+        margin-top: 25px;
+        margin-left: -10px;
+        width: 10%;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        z-index: 3;
+    }
+    
+    .panel {
+        padding: 0 20px;
+        background-color: white;
+        max-height: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    .accordion:after {
+        font-size: 13px;
+        color: #838384;
+        float: right;
+        margin-left: 5px;
     }
 
     #single-entry-row {
@@ -257,12 +286,12 @@
 
     #entry-target {
         margin-top: 12px;
-        margin-right: 105px;
+        /* margin-right: 105px; */
         text-align: left;
         white-space: wrap;
         overflow: hidden;
-        text-overflow: ellipsis;
-        padding-right: 20px;
+        width: 60%;
+        padding-right: 10px;
     }
 
     #entry-target p {
