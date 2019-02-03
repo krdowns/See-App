@@ -96,6 +96,7 @@
     .share-container img {
         padding-top: 30px;
         margin-bottom: 20px;
+        
     }
 
     .share-container h1 {
@@ -109,6 +110,7 @@
     .camera-icon {
         display: flex;
         height: 100px;
+        margin-left: 20px;
         fill: #ccc;
         justify-content: center;
         align-items: center;
@@ -372,7 +374,7 @@
     }
 
     .divider-last {
-        height: 80px;
+        height: 90px;
         background-color: #FFFFFF;
         margin-bottom: 0px;
     }
@@ -385,7 +387,7 @@
         bottom: 0;
         position: fixed;
         justify-content: space-between;
-        height: 70px;
+        height: 80px;
         width: 100%;
         z-index: 1;
     }
@@ -394,7 +396,7 @@
         display: flex;
         flex-direction: row;
         width: 40%;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         margin-left: 5px;
     }
 
@@ -402,12 +404,15 @@
         display: flex;
         flex-direction: row;
         width: 40%;
+        margin-bottom: 100px;
         margin-right: 5px;
     }
 
     .home-button-nav {
         margin-left: -20px;
         margin-top: 21.5px;
+        margin-bottom: 20px;
+
         z-index: 2;
     }
 
@@ -417,6 +422,7 @@
 
     .history-button-nav {
         padding-top: 6.5px;
+        margin-bottom: 20px;
         z-index: 2;
     }
 
@@ -428,14 +434,14 @@
         position: fixed;
         z-index: 2;
         bottom: 0;
-        left: 156px;
+        left: 162px;
         width: max-content;
         display: flex;
         justify-content: center;
     }
 
     .add-button-nav {
-        padding-bottom: 20px;
+        padding-bottom: 30px;
         margin-top: -20px;
         z-index: 2;
     }
@@ -444,11 +450,14 @@
         padding-top: 6.5px;
         margin-right: -8px;
         margin-left: -6%;
+        margin-bottom: 20px;
         z-index: 2;
     }
     
     .settings-button-nav {
         padding-top: 6.5px;
+        margin-bottom: 20px;
+
         z-index: 2;
     }
 
@@ -551,7 +560,7 @@
         justify-content: center;
         width: 100%;
         height: 60px;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
         margin-left: -1px;
     }
 
