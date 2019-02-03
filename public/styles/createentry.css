@@ -27,9 +27,6 @@
         width: 100%;
         background-color: transparent;
         margin-bottom: 20px;
-    }
-
-    ul {
         color: #eee;
         font-size: 18px;
         font-weight: 200;
@@ -46,11 +43,6 @@
     a {
         text-decoration: none;
         color:inherit;
-    }
-
-    ul:first-child a {
-        position: fixed;
-        left: 0;
     }
 
     .done {
