@@ -4,6 +4,12 @@
         max-width: 375px;
     }
 
+    input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
     body {
         height: 100%;
         width: 375px;

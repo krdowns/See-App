@@ -4,6 +4,12 @@
         text-align: center;
     }
 
+    input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
     #ice-button {
         fill: white;
         margin-top: 80px;

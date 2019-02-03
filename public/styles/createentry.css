@@ -3,6 +3,12 @@
         height: 100vh;
     }
 
+    input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
     body {
         background-image: linear-gradient(45deg, #1F2334, #3F3F59);
         size: cover;

@@ -11,6 +11,12 @@
         box-sizing: border-box;
     }
 
+    input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
     .logo-container {
         width: 100%;
         display: flex;

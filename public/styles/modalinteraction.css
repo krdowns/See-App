@@ -5,6 +5,12 @@
         font-family: 'IBM Plex Sans', sans-serif;
     }
 
+    input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
     .opaque-container {
         height: 100%;
         width: 100%;
