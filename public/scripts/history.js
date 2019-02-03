@@ -22,7 +22,7 @@ window.onload = function renderChart(data, labels) {
                ],
                datasets: [{
                   data: [toneObject.Analytical, toneObject.Anger, toneObject.Confident, toneObject.Joy, toneObject.Sadness, toneObject.Tentative],
-                  backgroundColor: ["Indigo", "#a91834", "Green", "Orange", "#405074", "Gray "]
+                  backgroundColor: ["#45023C", "#EC1E12", "#6F3764", "#EEcc22", "#405074", "#1F2334"]
                }]
             },
             options: {
