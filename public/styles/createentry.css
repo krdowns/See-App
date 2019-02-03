@@ -48,8 +48,9 @@
         color:inherit;
     }
 
-    .cancel {
-        margin-left: -30%;
+    ul:first-child a {
+        position: fixed;
+        left: 0;
     }
 
     .done {
