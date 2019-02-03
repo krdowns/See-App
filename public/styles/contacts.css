@@ -158,6 +158,18 @@
         color: #888;
     }
 
+    .favorite-contact-button {
+        background-color: white;
+        color: #111111;
+        border: none;
+        margin-bottom: 5px;
+        margin-top: -5px;
+        margin-left: -2%;
+        padding-right: 10%;
+        margin-right: 0;
+        fill: #a2a2a2;
+    }
+
     .delete-contact-button {
         background-color: white;
         color: #111111;
@@ -206,9 +218,10 @@
         height: 25px;
         margin-left: 6%;
         padding-left: 4%;
-        padding-bottom: 2%;
+        padding-bottom: 3%;
         width: 83.5%;
         margin-top: 2.5%;
+        font-size: 16px;
     }
 
     ::placeholder {
@@ -236,6 +249,10 @@
     .active {
         background-color: #1F2334;
         color: white;
+    }
+
+    .edit-delete-buttons svg {
+        fill: #a2a2a2;
     }
 
     .contacts-list {
