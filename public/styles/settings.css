@@ -1,4 +1,8 @@
 @media screen and (max-width: 425px) {
+    * {
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+    
     nav {
         top: 0;
         left: 0;
