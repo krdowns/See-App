@@ -145,7 +145,7 @@ window.onload = function(e) {
         localStorage.userID = user._id;
         }).fail(function (err) {
             console.log(err);
-            window.location.href = "./index";
+            window.location.href = "./";
         });
         $('#yesToken').toggleClass('show');
     } else {
