@@ -12,11 +12,12 @@
     body {
         background-image: linear-gradient(45deg, #1F2334, #3F3F59);
         size: cover;
-        height: 100%;
+        height: 100vh;
         background-repeat: no-repeat;
         padding-left: 10px;
         padding-right: 10px;
         font-family: 'IBM Plex Sans', sans-serif;
+        margin-bottom: 0%;
     }
 
     h1 {
@@ -79,7 +80,7 @@
     }
 
     .btn {
-        position: fixed;
+        position: absolute;
         margin-top: 10px;
         padding: 10px;
         width: 30%;
