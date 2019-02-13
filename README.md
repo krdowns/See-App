@@ -1,8 +1,12 @@
 # See
 
-  See App is designed as a source of truth for people who struggle with mental illness, and specifically Paranoid Schizophrenia (PS). See is designed to be a judge-free outlet for those who struggle with feeling:  <br> <br>ALONE - not knowing how to communicate their thoughts  <br> LOST - not knowing their purpose or worth  <br> TRAPPED - not being able do discern between what is real and what is delusion.  <br>  <br>
-   A user will sign up and can create entries which are analyzed by the Watson Tone Analyzer API, and return a graph of overall emotions pulled from the tone of the document. A user can also create a list of emergency contacts which can be notified of any alarming trends in entries.
-   
+Heroku Deployment: https://peaceful-coast-36308.herokuapp.com
+
+
+See App is designed as a source of truth for people who struggle with mental illness, and specifically Paranoid Schizophrenia (PS). See is designed to be a judge-free outlet for those who struggle with feeling:  <br> <br>ALONE - not knowing how to communicate their thoughts  <br> LOST - not knowing their purpose or worth  <br> TRAPPED - not being able do discern between what is real and what is delusion.  <br>  <br>
+A user will sign up and can create entries which are analyzed by the Watson Tone Analyzer API, and return a graph of overall emotions pulled from the tone of the document. A user can also create a list of emergency contacts which can be notified of any alarming trends in entries.
+
+
 # Technologies Used
 
 HTML <br>
@@ -24,3 +28,8 @@ Text/Email Notifications to Contacts <br>
 Machine Learning for App responses to users  <br>
 Curated Feed for Volunteer Opportunities, Inspirational Articles, and Videos <br>
 In-App Messaging
+
+# Notes for Running See
+
+See is designed solely for iPhone at this time. Please open developer tools if on a desktop or laptop and use responsive developer tool on iPhone X settings.
+
