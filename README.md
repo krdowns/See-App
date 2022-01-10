@@ -1,4 +1,5 @@
 # See
+See is designed solely for iPhone at this time. Please open developer tools if on a desktop or laptop and use responsive developer tool on iPhone X settings.
 
 Heroku Deployment: https://peaceful-coast-36308.herokuapp.com
 
@@ -30,6 +31,4 @@ Curated Feed for Volunteer Opportunities, Inspirational Articles, and Videos <br
 In-App Messaging
 
 # Notes for Running See
-
-See is designed solely for iPhone at this time. Please open developer tools if on a desktop or laptop and use responsive developer tool on iPhone X settings.
 
